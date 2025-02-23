@@ -1,0 +1,73 @@
+{
+	"commonSystemKeys": {
+		"language": {
+			"es": "Spanish",
+			"en": "English"
+		},
+		"copyrigth": "All rights reserved",
+		"validations": {
+			"required": "This field is required",
+			"invalidEmail": "Invalid email address"
+		},
+		"pickADate": "Pick a date"
+	},
+	"auth": {
+		"register": {
+			"title": "Register",
+			"names": "Names",
+			"lastnames": "Last names",
+			"birthdate": "Date of birth",
+			"birthdateDescription": "Your date of birth is used to calculate your age.",
+			"email": "Email",
+			"password": "Password",
+			"confirmPassword": "Confirm Password",
+			"register": "Register",
+			"login": "Login",
+			"alreadyHaveAccount": "Already have an account?",
+			"registerSuccess": "Register success",
+			"registerFailed": "Register failed",
+			"minPassword6": "Password must contain at least 6 characters",
+			"passwordMismatch": "Passwords do not match"
+		},
+		"otp": {
+			"title": "OTP Verification",
+			"subtitle": "One-time code",
+			"description": "Please enter the 6-digit code sent to your email address",
+			"invalidCode": "Invalid OTP code",
+			"noCode": "Don't receive the OTP?",
+			"resend": "RESEND",
+			"resendCountdown": "RESEND ({{seconds}}s)",
+			"noMoreAttempts": "No more attempts available",
+			"remainingAttempts": "Remaining attempts: {{count}}",
+			"continue": "Continue",
+			"success": {
+				"title": "Success!",
+				"message": "Congratulations! You have successfully authenticated."
+			}
+		},
+		"createOrRequestCompany": {
+			"title": "Create or request",
+			"createCompany": "Create company",
+			"companyName": "Company name",
+			"size": {
+				"label": "Size",
+				"placeholder": "Select a size...",
+				"searchPlaceholder": "Search size...",
+				"options": {
+					"SMALL": "1 - 50 employees",
+					"MEDIUM": "51 - 250 employees",
+					"LARGE": "More than 250 employees"
+				}
+			},
+			"sector": {
+				"label": "Company Sector",
+				"placeholder": "Mining, Textile, etc."
+			},
+			"email": {
+				"label": "Corporate Email",
+				"placeholder": "john.doe@enterprise.io"
+			},
+			"submitButton": "Submit"
+		}
+	}
+}

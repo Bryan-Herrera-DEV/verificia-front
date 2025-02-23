@@ -1,0 +1,73 @@
+{
+	"commonSystemKeys": {
+		"language": {
+			"es": "Español",
+			"en": "Inglés"
+		},
+		"copyrigth": "Todos los derechos reservados",
+		"validations": {
+			"required": "Este campo es requerido",
+			"invalidEmail": "Correo electrónico inválido"
+		},
+		"pickADate": "Elige una fecha"
+	},
+	"auth": {
+		"register": {
+			"title": "Registro",
+			"names": "Nombres",
+			"lastnames": "Apellidos",
+			"birthdate": "Fecha de nacimiento",
+			"birthdateDescription": "Tu fecha de nacimiento se utiliza para calcular tu edad.",
+			"email": "Correo electrónico",
+			"password": "Contraseña",
+			"confirmPassword": "Confirmar contraseña",
+			"register": "Registrarse",
+			"login": "Iniciar sesión",
+			"alreadyHaveAccount": "¿Ya tienes una cuenta?",
+			"registerSuccess": "Registro exitoso",
+			"registerFailed": "Registro fallido",
+			"minPassword6": "La contraseña debe tener al menos 6 caracteres",
+			"passwordMismatch": "Las contraseñas no coinciden"
+		},
+		"otp": {
+			"title": "Verificación OTP",
+			"subtitle": "Código de un solo uso",
+			"description": "Por favor ingrese el código de 6 dígitos enviado a su dirección de correo electrónico",
+			"invalidCode": "Código OTP inválido",
+			"noCode": "¿No recibes el OTP?",
+			"resend": "REENVIAR",
+			"resendCountdown": "REENVIAR ({{seconds}}s)",
+			"noMoreAttempts": "No hay más intentos disponibles",
+			"remainingAttempts": "Intentos restantes: {{count}}",
+			"continue": "Continuar",
+			"success": {
+				"title": "¡Éxito!",
+				"message": "¡Felicidades! Se ha autenticado correctamente."
+			}
+		},
+		"createOrRequestCompany": {
+			"title": "Crear o solicitar",
+			"createCompany": "Crear empresa",
+			"companyName": "Nombre de la empresa",
+			"size": {
+				"label": "Tamaño",
+				"placeholder": "Selecciona el tamaño...",
+				"searchPlaceholder": "Buscar tamaño...",
+				"options": {
+					"SMALL": "De 1 a 50 empleados",
+					"MEDIUM": "De 51 a 250 empleados",
+					"LARGE": "Más de 250 empleados"
+				}
+			},
+			"sector": {
+				"label": "Sector de la empresa",
+				"placeholder": "Minería, Textil, etc."
+			},
+			"email": {
+				"label": "Email Corporativo",
+				"placeholder": "john.doe@enterprise.io"
+			},
+			"submitButton": "Enviar"
+		}
+	}
+}
