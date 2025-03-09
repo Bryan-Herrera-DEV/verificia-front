@@ -7,7 +7,7 @@ const PublicLayout = () => {
       <img
         alt=""
         src={GradienteVector}
-        className="absolute !w-[800px] !h-[500px] top-[-180px] max-w-none left-1/2 transform -translate-x-1/2"
+        className="absolute !w-[800px] !h-[500px] top-[-200px] max-w-none left-1/2 transform -translate-x-1/2"
       />
 
       <div className="w-full !h-full z-30">

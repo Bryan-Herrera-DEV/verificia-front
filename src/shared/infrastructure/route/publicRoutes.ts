@@ -9,5 +9,11 @@ export const publicRoutes: IRoute[] = [
       () => import("@/features/Home/application/pages/LandingPrincipal")
     ),
     authority: [],
-  }
+  },
+  {
+    key: "auth-register",
+    path: "/auth/register",
+    component: lazy(() => import("@/features/Auth/application/pages/Register")),
+    authority: [],
+  },
 ];

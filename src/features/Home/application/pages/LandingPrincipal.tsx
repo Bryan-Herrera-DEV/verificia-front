@@ -1,6 +1,12 @@
 import { Button } from "@/shared/application/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const LandingPrincipal = () => {
+  const navigate = useNavigate();
+
+  const redirectTo = () => {
+    navigate("/auth/register");
+  };
   return (
     <div className="relative isolate overflow-hidden py-8 h-full flex flex-col justify-end items-center">
       <div className="mx-auto max-w-2xl">
@@ -15,8 +21,8 @@ const LandingPrincipal = () => {
           </p>
 
           <div className="w-full">
-            <Button className="w-full rounded-xl font-semibold" variant={'minoGradient'}>¡Empecemos!</Button>
-            <p className="text-gray-400 font-light">Si ya tienes cuenta {" "} <a className="cursor-pointer text-[#00BECD] hover:underline">Inicia Sesión</a></p>
+            <Button onClick={redirectTo} className="w-full rounded-xl font-semibold" variant={'minoGradient'}>¡Empecemos!</Button>
+            <p className="text-gray-400 font-light">Si ya tienes cuenta {" "} <a href="/auth/register" className="cursor-pointer text-[#00BECD] hover:underline">Inicia Sesión</a></p>
           </div>
         </div>
       </div>
