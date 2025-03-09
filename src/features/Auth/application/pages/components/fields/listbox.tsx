@@ -43,12 +43,15 @@ export default function Listbox({
           type="button"
           onClick={() => onChange(option.value)}
           className={cn(
-            "flex w-full items-center gap-3 rounded-lg border px-4 py-3 text-left",
-            value === option.value
-              ? "border-primary bg-primary/10"
-              : "border-neutral-700"
+            "border-none shadow-none flex w-full items-center justify-start gap-3 rounded-lg border py-3 text-left"
           )}
         >
+          <span
+            className={cn(
+              "w-[15px] h-[15px] bg-[#D4BEFF] rounded-full",
+              value === option.value ? "bg-[#999999]" : "bg-[#D4BEFF]"
+            )}
+          ></span>
           <span className="text-sm font-medium">{option.label}</span>
         </Button>
       ))}
