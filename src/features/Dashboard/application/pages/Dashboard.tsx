@@ -27,6 +27,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/shared/application/components/ui/dialog";
+import { TwitterLogoIcon } from "@radix-ui/react-icons";
 
 type TCategory = "PERSON" | "ORGANIZATION";
 type TOrigin = "PUBLIC" | "PRIVATE" | "MIXIN";
@@ -214,7 +215,39 @@ export const Dashboard = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-            ></motion.div>
+            >
+              <div className="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800 max-w-[400px]">
+                <div className="w-full flex mb-4">
+                  <div className="overflow-hidden rounded-full w-12 h-12">
+                    <img
+                      src="https://pbs.twimg.com/profile_images/1699194287706066944/0T-xsUnA_200x200.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex-grow pl-3">
+                    <h6 className="font-bold text-md">Joe Blow</h6>
+                    <p className="text-xs text-gray-600">@joe.blow</p>
+                  </div>
+                  <div className="w-12 text-right">
+                    <TwitterLogoIcon className="text-blue-400 text-3xl w-10 h-10" />
+                  </div>
+                </div>
+                <div className="w-full mb-4">
+                  <p className="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nam obcaecati laudantium recusandae, debitis eum voluptatem
+                    ad, illo voluptatibus temporibus odio provident. Laboriosam
+                    accusamus necessitatibus tenetur praesentium ullam
+                    voluptates nulla reprehenderit? ?
+                  </p>
+                </div>
+                <div className="w-full">
+                  <p className="text-xs text-gray-500 text-right">
+                    Oct 15th 8:33pm
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </main>
 

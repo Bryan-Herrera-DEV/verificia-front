@@ -4,11 +4,6 @@
 @layer base {
   :root {
     /* Colores de la marca */
-    --quira-black-Night: 0 0% 5%;
-    --quira-black-Eerie: 0 0% 12%;
-    --quira-black-Jet: 0 0% 16%;
-    --quira-black-onyx: 0 0% 20%;
-    /* Colores de la marca */
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -65,6 +60,6 @@
 }
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border !font-monserrat;
   }
 }

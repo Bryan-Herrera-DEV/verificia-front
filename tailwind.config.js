@@ -9,7 +9,8 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     fontFamily: {
-      roboto: ["Roboto", "sans-serif"],
+      monserrat: ["Montserrat"],
+      filonsoft: ["FilonSoft"]
     },
     extend: {
       borderRadius: {
@@ -57,13 +58,7 @@ export default {
           3: "hsl(var(--chart-3))",
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
-        },
-        black: {
-          Night: "hsl(var(--quira-black-Night))",
-          Eerie: "hsl(var(--quira-black-Eerie))",
-          Jet: "hsl(var(--quira-black-Jet))",
-          Onyx: "hsl(var(--quira-black-onyx))",
-        },
+        }
       },
     },
   },
