@@ -1,0 +1,67 @@
+.bubble_celeste_sentado_left {
+  position: relative;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  left: 125px;
+  text-align: center;
+  background-color: #c3b4ff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  box-shadow: -7px 5px 0px 4px rgba(75, 21, 180, 1);
+  -webkit-box-shadow: -7px 5px 0px 4px rgba(75, 21, 180, 1);
+  -moz-box-shadow: -7px 5px 0px 4px rgba(75, 21, 180, 1);
+}
+
+.bubble_celeste_sentado_left:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 32px;
+  bottom: -50px;
+}
+.bubble_celeste_sentado_left:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 40px;
+  bottom: -30px;
+  
+}
+.bubble_celeste_sentado_left {
+  position: relative;
+  color: white;
+  width: 210px;
+  padding: 10px;
+  left: 100px;
+  text-align: center;
+  background-color: #c3b4ff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.bubble_celeste_sentado_left:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 32px;
+  bottom: -50px;
+}
+.bubble_celeste_sentado_left:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 40px;
+  bottom: -36px;
+  border: 18px solid;
+  border-color: #c3b4ff transparent transparent #c3b4ff;
+  
+  /* Aplica múltiples sombras solo a la izquierda */
+  box-shadow: -6px 0px 0px 0px rgba(75, 21, 180, 1);
+}
+

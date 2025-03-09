@@ -53,6 +53,7 @@ export const schema: Schema<Values> = [
               heading="Welcome!"
               fields={[]}
               description="¡Vamos a conocerte mejor!  Comienza tu viaje financiero"
+              coinTalk
               button={
                 <Button
                   className="w-full rounded-xl font-semibold"
@@ -103,7 +104,14 @@ export const schema: Schema<Values> = [
                   ]}
                 />,
               ]}
-              button={<NextButton>Submit</NextButton>}
+              button={
+                <Button
+                  className="w-full rounded-xl font-semibold"
+                  variant={"minoGradient"}
+                >
+                  Continuar
+                </Button>
+              }
               back={<BackButton />}
             />
           </Step>
@@ -147,51 +155,14 @@ export const schema: Schema<Values> = [
                   ]}
                 />,
               ]}
-              button={<NextButton>Submit</NextButton>}
-              back={<BackButton />}
-            />
-          </Step>
-        </MultiStep>
-      ),
-    },
-  },
-  {
-    form: {
-      values: () => ({ choice: ["", []] }),
-      render: ({ values, onNext, onBack, getState, setState }) => (
-        <MultiStep
-          step="selection"
-          onNext={onNext}
-          onBack={onBack}
-          getState={getState}
-          setState={setState}
-        >
-          <Step
-            defaultValues={values}
-            resolver={zodResolver(
-              z.object({
-                choice: z.string().min(1, "Please select an option"),
-              })
-            )}
-          >
-            <Layout
-              current={3}
-              total={7}
-             heading="¿Cuál es tu fuente de ingresos?"
-              description="Selecciona tu principal fuente de ingresos."
-              fields={[
-                <Listbox
-                  key="choice"
-                  name="choice"
-                  label="Options"
-                  options={[
-                    { value: "ventas", label: "Ventas" },
-                    { value: "padres", label: "Mis padres" },
-                    { value: "ninguno", label: "No recibo ingresos" },
-                  ]}
-                />,
-              ]}
-              button={<NextButton>Submit</NextButton>}
+              button={
+                <Button
+                  className="w-full rounded-xl font-semibold"
+                  variant={"minoGradient"}
+                >
+                  Continuar
+                </Button>
+              }
               back={<BackButton />}
             />
           </Step>
@@ -215,10 +186,11 @@ export const schema: Schema<Values> = [
             resolver={zodResolver(z.object({ info: z.string() }))}
           >
             <Layout
-              current={4}
+              current={3}
               total={7}
               heading="Información"
               fields={[]}
+              coinTalk={true}
               description="Empezar joven te da una gran ventaja. Cuanto antes aprendas sobre dinero, mejor preparado estarás para el futuro."
               button={
                 <Button
@@ -256,7 +228,7 @@ export const schema: Schema<Values> = [
             <Layout
               current={5}
               total={7}
-             heading="¿Cómo te sientes manejando dinero?"
+              heading="¿Cómo te sientes manejando dinero?"
               description="Selecciona tu principal fuente de ingresos."
               fields={[
                 <Listbox
@@ -280,41 +252,6 @@ export const schema: Schema<Values> = [
     },
   },
   {
-    form: {
-      values: () => ({ info: ["", []] }),
-      render: ({ values, onNext, onBack, getState, setState }) => (
-        <MultiStep
-          step="info"
-          onNext={onNext}
-          onBack={onBack}
-          getState={getState}
-          setState={setState}
-        >
-          <Step
-            defaultValues={values}
-            resolver={zodResolver(z.object({ info: z.string() }))}
-          >
-            <Layout
-              current={6}
-              total={7}
-              heading="Información"
-              fields={[]}
-              description="Empezar joven te da una gran ventaja. Cuanto antes aprendas sobre dinero, mejor preparado estarás para el futuro."
-              button={
-                <Button
-                  className="w-full rounded-xl font-semibold"
-                  variant={"minoGradient"}
-                >
-                  Continuar
-                </Button>
-              }
-            />
-          </Step>
-        </MultiStep>
-      ),
-    },
-  },
-  {
     return: ({ choice }) => ({ choice }),
   },
 ];
@@ -329,7 +266,7 @@ const Register = () => {
     return (
       <div>
         <h2>Form Submitted!</h2>
-        <p>Your choice: {values.choice}</p>
+        <p>Your choice: {values.goal}</p>
         <button onClick={() => setValues(null)}>Restart</button>
       </div>
     );

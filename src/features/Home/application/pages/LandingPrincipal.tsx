@@ -12,7 +12,7 @@ const LandingPrincipal = () => {
       <div className="mx-auto max-w-2xl">
         <div className="text-center space-y-32">
           <h1 className="!font-filonsoft text-5xl font-bold tracking-tight text-balance text-[#00BECD] sm:text-7xl">
-            Arendes,
+            Aprendes,
             <br /> Ganas
           </h1>
           <p className="mt-36 text-sm font-medium text-pretty text-[#000]">
